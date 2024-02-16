@@ -1,0 +1,16 @@
+html {
+  --color-blue: #0095F6;
+
+  &[data-theme="dark"] {
+    --bg-color: #000;
+    --color-main: #fff;
+    --color-secondary: #a8a8a8;
+    --main-border-color: #262626;
+  }
+  &[data-theme="light"] {
+    --bg-color: #fff;
+    --color-main: #000;
+    --color-secondary: #737373;
+    --main-border-color: #DBDBDB;
+  }
+}

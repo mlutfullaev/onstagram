@@ -1,0 +1,19 @@
+@import './normalize.css';
+@import './variables';
+
+* {
+  font-family: BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  color: var(--color-main);
+  background-color: var(--bg-color);
+  min-height: 100vh;
+}
+
+svg {
+  fill: var(--color-main);
+}
