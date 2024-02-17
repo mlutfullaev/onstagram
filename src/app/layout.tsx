@@ -1,10 +1,14 @@
 import '@/assets/styles/global.scss'
 
 import type { Metadata } from "next";
+import Sidebar from "@/layouts/Sidebar/Sidebar";
 
 export const metadata: Metadata = {
   title: "Onstagram",
   description: "Clone of Instagram",
+  icons: {
+    icon: '/favicon.png'
+  }
 };
 
 export default function RootLayout({
@@ -14,7 +18,14 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" data-theme="dark">
-      <body>{children}</body>
+      <body>
+        <div className="app">
+          <Sidebar />
+          <div className="page">
+            {children}
+          </div>
+        </div>
+      </body>
     </html>
   );
 }

@@ -1,5 +1,8 @@
 html {
   --color-blue: #0095F6;
+  --sidebar-width: 240px;
+  --sidebar-closed-width: 90px;
+  --hover-overlay: rgba(255, 255, 255, .1);
 
   &[data-theme="dark"] {
     --bg-color: #000;

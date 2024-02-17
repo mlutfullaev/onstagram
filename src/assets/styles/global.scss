@@ -13,7 +13,13 @@ body {
   background-color: var(--bg-color);
   min-height: 100vh;
 }
-
-svg {
-  fill: var(--color-main);
+.app {
+  display: grid;
+  grid-template-columns: auto 1fr;
+}
+.page {
+  width: 100%;
+  height: 100vh;
+  overflow-y: auto;
+  padding-left: var(--sidebar-width);
 }
